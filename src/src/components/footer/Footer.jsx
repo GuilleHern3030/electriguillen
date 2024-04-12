@@ -8,12 +8,14 @@ import facebook from "../../assets/images/facebook-icon.webp";
 import instagram from "../../assets/images/instagram-icon.webp";
 import twitter from "../../assets/images/twitter-icon.webp";
 
+const goTop = () => window.scrollTo({top:0});
+
 export default () => {
 
     return <footer className={styles.footer}>
 
         <div className={styles.pagename_container}>
-            <Link className={styles.pagename} to="/">
+            <Link className={styles.pagename} to="/" onClick={()=>goTop()}>
                 <img className={styles.logo} src={logo}/>
                 <p>{data.pagename}</p>
             </Link>
@@ -32,7 +34,7 @@ export default () => {
         </div>
 
         <div className={styles.privacy}>
-            <Link to="/privacy">Aviso legal</Link>
+            <Link to="/privacy" onClick={()=>goTop()}>Aviso legal</Link>
             <a href={data.credits_url}>{data.credits}</a>
         </div>
 
