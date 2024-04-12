@@ -43,8 +43,8 @@ const routes = createBrowserRouter([
     element: <Privacy/>,
     errorElement: <NotFound/>
   }
-],
-options)
+]/*,
+options*/)
 
 const App = () => <>
   <RouterProvider router={routes}/>
