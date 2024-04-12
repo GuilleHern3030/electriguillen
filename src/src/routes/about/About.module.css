@@ -1,0 +1,77 @@
+.main {
+    margin: 1rem 0;
+}
+
+.sectionwhite {
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    padding: 5vw;
+}
+
+.whatdo__title {
+    margin: 1rem;
+    font-size: 1.5em;
+}
+
+.whatdo__text {
+    margin: 1.5rem 0;
+}
+
+.whatdo__more {
+    background-color: rgb(84, 17, 17);
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.whatdo__more span {
+    color:rgb(244, 244, 248);
+    font-size: 1.3em;
+    padding: 1rem;
+}
+
+.whatdo__more p {
+    color:rgb(244, 244, 248);
+    padding: 1rem;
+}
+
+.whatdo__list {
+    text-align: start;
+    margin: 1rem 0;
+}
+
+.whatdo__list ul {
+    margin: .8rem
+}
+
+.whatdo__list li {
+    list-style:none;
+    margin: .7rem 0;
+}
+.whatdo__list li:before {
+    content: "\2192";
+    margin-right: 0.5em;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .whatdo__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .images img {
+        width: 27vw;
+        height: 27vw;
+        margin: 1vw;
+    }
+}
