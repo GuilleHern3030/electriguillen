@@ -48,7 +48,7 @@ export default function Header(
                 style={{ backgroundColor: pageScrolled === undefined ? backgroundColor : {} }}
             >
                 <div className={styles.pageNameContainer}>
-                    { logo ? <img className={styles.logo} src={logo}/> : <></> }
+                    { logo ? <Link className={styles.logo} to="/" onClick={()=>goTop()}><img className={styles.logo} src={logo}/></Link> : <></> }
                     { 
                         pageName ? 
                             <Link 

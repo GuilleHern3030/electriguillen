@@ -43,7 +43,7 @@
 .info {
     display: flex;
     flex-direction: column;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     margin: 1rem 0;
 }
 
@@ -81,9 +81,13 @@
     width: 100%;
 }
 
+.email {
+    font-size: .9em;
+}
+
 @media only screen and (min-width: 360px) {
     .footer { 
-        font-size: 20px;
+        font-size: 18px;
         --logo-size: 50px;
         --icon-size: 55px;
     }
@@ -92,7 +96,7 @@
 @media only screen and (min-width: 480px) {
     .icon { margin: 0 2rem; }
     .footer { 
-        font-size: 22px;
+        font-size: 20px;
         --logo-size: 60px;
         --icon-size: 70px;
     }

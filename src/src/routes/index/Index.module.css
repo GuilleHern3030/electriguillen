@@ -80,6 +80,13 @@
     border-radius: 10px;
 }
 
+.infoimg2 {
+    width: 60vw;
+    height: 60vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 @media only screen and (min-width: 768px) {
     .infobox {
         flex-direction: row;
@@ -90,6 +97,11 @@
     }
     .infoimages {
         flex-direction: row;
+    }
+
+    .infoimg2 {
+        width: 30vw;
+        height: 30vw;
     }
 }
 

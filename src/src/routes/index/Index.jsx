@@ -45,6 +45,7 @@ export default () => {
 
                     </div>
                     <div>
+                        {/* <img className={styles.infoimg} src={tablero}/> */}
                         <AlternantingImage src={[tablero, caja]} borderradius={5}/>
                     </div>
                 </article>
@@ -80,8 +81,8 @@ export default () => {
                         
                     </div>
                     <div className={styles.infoimages}>
-                        {/* <img className={styles.infoimg} src={termica}/> */}
-                        <AlternantingImage src={[termica, caja2]} borderradius={5}/>
+                        <img className={styles.infoimg2} src={caja2}/>
+                        {/* <AlternantingImage src={[termica, caja2]} borderradius={5}/> */}
                     </div>
                 </article>
             </section>
