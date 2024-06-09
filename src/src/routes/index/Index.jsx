@@ -45,8 +45,7 @@ export default () => {
 
                     </div>
                     <div>
-                        {/* <img className={styles.infoimg} src={tablero}/> */}
-                        <AlternantingImage src={[tablero, caja]} borderradius={5}/>
+                        <AlternantingImage src={[tablero/*, caja*/]} borderradius={5}/>
                     </div>
                 </article>
             </section>

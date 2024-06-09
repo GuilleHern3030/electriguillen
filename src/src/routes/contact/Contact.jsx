@@ -35,16 +35,16 @@ export default () => {
                 <article className={styles.article} style={{backgroundColor:"#e9e9e9"}}>
                     <p className={styles.title}><span>Medio de contacto</span></p>
                     <p>Podés contactarnos a través de nuestro WhatsApp</p>
-                    <a href={data.whatsapp}><img className={`${styles.icon} ${styles.preferredcontact}`} src={whatsapp}/></a>
+                    <a target="_BLANK" href={data.whatsapp}><img className={`${styles.icon} ${styles.preferredcontact}`} src={whatsapp}/></a>
                 </article>
                 
                 <article className={styles.article} style={{backgroundColor:"#c9c3c3"}}>
                     <p className={styles.title}><span>Nuestras redes sociales</span></p>
                     <p>También podés encontrarnos en nuestras redes sociales</p>
                     <div className={styles.social}>
-                        <a href={data.facebook}><img className={styles.icon} src={facebook}/></a>
-                        <a href={data.instagram}><img className={styles.icon} src={instagram}/></a>
-                        <a href={data.twitter}><img className={styles.icon} src={twitter}/></a>
+                        <a target="_BLANK" href={data.facebook}><img className={styles.icon} src={facebook}/></a>
+                        <a target="_BLANK" href={data.instagram}><img className={styles.icon} src={instagram}/></a>
+                        <a target="_BLANK" href={data.twitter}><img className={styles.icon} src={twitter}/></a>
                     </div>
                 </article>
                 

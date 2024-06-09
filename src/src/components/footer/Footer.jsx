@@ -22,20 +22,20 @@ export default () => {
         </div>
 
         <div className={styles.info}>
-            <a href={data.whatsapp}>{data.phone}</a>
+            <a href={data.whatsapp} target="_BLANK">{data.phone}</a>
             <a className={styles.email} aria-label="email" href={`mailto:${data.email}?subject=ElectriGuillen"`}>{data.email}</a>
-            <a href={data.address_url}>{data.address}</a>
+            <a href={data.address_url} target="_BLANK">{data.address}</a>
         </div>
 
         <div className={styles.social}>
-            <a href={data.facebook}><img className={styles.icon} src={facebook}/></a>
-            <a href={data.instagram}><img className={styles.icon} src={instagram}/></a>
-            <a href={data.twitter}><img className={styles.icon} src={twitter}/></a>
+            <a href={data.facebook} target="_BLANK"><img className={styles.icon} src={facebook}/></a>
+            <a href={data.instagram} target="_BLANK"><img className={styles.icon} src={instagram}/></a>
+            <a href={data.twitter} target="_BLANK"><img className={styles.icon} src={twitter}/></a>
         </div>
 
         <div className={styles.privacy}>
             <Link to="/privacy" onClick={()=>goTop()}>Aviso legal</Link>
-            <a href={data.credits_url}>{data.credits}</a>
+            <a target="_BLANK" href={data.credits_url}>{data.credits}</a>
         </div>
 
     </footer>

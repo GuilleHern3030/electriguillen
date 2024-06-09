@@ -4,17 +4,23 @@ import styles from './AlternantingImage.module.css'
 export default ({minheight="400px", timems=5000, borderradius=0, src}) => {
 
     const [ i, setI ] = useState(0)
+    const [ url, setUrl ] = useState()
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setI(prev => prev + 1 === src.length ? 0 : prev + 1)
-        }, timems);
-        return () => clearInterval(interval)
+        if (src.length > 1) {
+            const interval = setInterval(() => {
+                setI(prev => prev + 1 === src.length ? 0 : prev + 1)
+            }, timems);
+            console.log("Interval ", interval);
+            return () => clearInterval(interval)
+        } else setUrl(src);
     }, [])
+
+    useEffect(() => { setUrl(src[i]) }, [i])
 
     return <div style={
         {
-            backgroundImage:`url(${src[i]})`, 
+            backgroundImage:`url(${url})`, 
             backgroundSize: "cover",
             backgroundPosition: "50% 50%",
             width:"100%",
