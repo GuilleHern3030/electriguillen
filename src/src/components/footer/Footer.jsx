@@ -23,7 +23,7 @@ export default () => {
 
         <div className={styles.info}>
             <a href={data.whatsapp} target="_BLANK">{data.phone}</a>
-            <a className={styles.email} aria-label="email" href={`mailto:${data.email}?subject=ElectriGuillen"`}>{data.email}</a>
+            <a className={styles.email} aria-label="email" href={`mailto:${data.email}?subject=ElectriGuillenh"`}>{data.email}</a>
             <a href={data.address_url} target="_BLANK">{data.address}</a>
         </div>
 
