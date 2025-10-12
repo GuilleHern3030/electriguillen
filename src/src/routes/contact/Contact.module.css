@@ -38,8 +38,8 @@
     padding: 3px;
     margin: 0 .5rem;
     transition: transform 0.25s;
-    height: 15vw;
-    width: 15vw;
+    height: 5em;
+    width: 5em;
     min-height: 40px;
     min-width: 40px;
 }
@@ -50,8 +50,8 @@
 
 .preferredcontact {
     margin: 1rem 0;
-    width: 20vw;
-    height: 20vw;
+    width: 7em;
+    height: 7em;
     min-height: 70px;
     min-width: 70px;
 }
